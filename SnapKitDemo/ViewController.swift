@@ -35,8 +35,8 @@ class ViewController: UIViewController {
         view.addSubview(mainView)
         
         mainView.snp.makeConstraints { (make) in
-            make.top.left.equalTo(20)
-            make.right.bottom.equalTo(-20)
+            make.topMargin.left.equalTo(20)
+            make.right.bottomMargin.equalTo(-20)
         }
     }
 
