@@ -25,6 +25,28 @@ class ViewController: UIViewController {
         return view
     }()
     
+    let topView: UIView = {
+        let view = UIView(frame: .zero)
+        view.backgroundColor = .red
+        view.layer.cornerRadius = 20
+        return view
+    }()
+    
+    let bottomView: UIView = {
+        let view = UIView(frame: .zero)
+        view.backgroundColor = .blue
+        view.layer.cornerRadius = 20
+        return view
+    }()
+    
+    lazy var mainStackView: UIStackView = {
+        let stackView = UIStackView(arrangedSubviews: [topView,
+                                                       bottomView])
+        stackView.axis = .vertical
+        stackView.distribution = .fillEqually
+        stackView.spacing = 20
+        return stackView
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +64,7 @@ class ViewController: UIViewController {
     func setupViews() {
         view.addSubview(mainView)
         mainView.addSubview(subView)
+        subView.addSubview(mainStackView)
         
         mainView.snp.makeConstraints { (make) in
             make.topMargin.left.equalTo(20)
@@ -51,6 +74,11 @@ class ViewController: UIViewController {
         subView.snp.makeConstraints { (make) in
             make.width.height.equalTo(300)
             make.center.equalTo(mainView)
+        }
+        
+        mainStackView.snp.makeConstraints { (make) in
+            make.top.left.equalTo(20)
+            make.bottom.right.equalTo(-20)
         }
     }
 
