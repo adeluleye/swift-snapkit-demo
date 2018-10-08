@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E91B106B216B82C900205EC4 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91B106A216B82C900205EC4 /* ViewController2.swift */; };
 		E9D48A6B216ADDCD00568226 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D48A6A216ADDCD00568226 /* AppDelegate.swift */; };
 		E9D48A6D216ADDCD00568226 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D48A6C216ADDCD00568226 /* ViewController.swift */; };
 		E9D48A72216ADDCE00568226 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9D48A71216ADDCE00568226 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 		49FA0FCFC818ED3436D5A333 /* Pods-SnapKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnapKitDemo/Pods-SnapKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		75508D40EAB50A8E9B577930 /* Pods_SnapKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A18A6CBAEF68A1AF3C275287 /* Pods-SnapKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnapKitDemo/Pods-SnapKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E91B106A216B82C900205EC4 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		E9D48A67216ADDCD00568226 /* SnapKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D48A6A216ADDCD00568226 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9D48A6C216ADDCD00568226 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				E9D48A71216ADDCE00568226 /* Assets.xcassets */,
 				E9D48A73216ADDCE00568226 /* LaunchScreen.storyboard */,
 				E9D48A76216ADDCE00568226 /* Info.plist */,
+				E91B106A216B82C900205EC4 /* ViewController2.swift */,
 			);
 			path = SnapKitDemo;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			files = (
 				E9D48A6D216ADDCD00568226 /* ViewController.swift in Sources */,
 				E9D48A6B216ADDCD00568226 /* AppDelegate.swift in Sources */,
+				E91B106B216B82C900205EC4 /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
