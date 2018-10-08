@@ -17,6 +17,14 @@ class ViewController: UIViewController {
         view.layer.cornerRadius = 20
         return view
     }()
+    
+    let subView: UIView = {
+        let view = UIView(frame: .zero)
+        view.backgroundColor = UIColor.lightGray
+        view.layer.cornerRadius = 20
+        return view
+    }()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,10 +41,16 @@ class ViewController: UIViewController {
     
     func setupViews() {
         view.addSubview(mainView)
+        mainView.addSubview(subView)
         
         mainView.snp.makeConstraints { (make) in
             make.topMargin.left.equalTo(20)
             make.right.bottomMargin.equalTo(-20)
+        }
+        
+        subView.snp.makeConstraints { (make) in
+            make.width.height.equalTo(300)
+            make.center.equalTo(mainView)
         }
     }
 
